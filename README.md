@@ -6,8 +6,12 @@ Homebrew tap for [spectra](https://github.com/IbrarYunus/spectra) — a fast ter
 
 ```sh
 brew tap IbrarYunus/spectra
-brew install spectra
+brew install spectra-vis
 ```
+
+> The Homebrew formula is named `spectra-vis` because `spectra` is already taken
+> in homebrew-core (a C++ eigenvalue library). The installed binary is still
+> called **`spectra`**.
 
 Then run:
 

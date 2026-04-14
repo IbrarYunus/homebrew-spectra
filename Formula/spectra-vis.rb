@@ -1,4 +1,4 @@
-class Spectra < Formula
+class SpectraVis < Formula
   desc "Fast terminal music visualiser with ten styles and ScreenCaptureKit audio"
   homepage "https://github.com/IbrarYunus/spectra"
   url "https://github.com/IbrarYunus/spectra/archive/refs/tags/v0.1.0.tar.gz"
