@@ -1,19 +1,17 @@
 class SpectraVis < Formula
   desc "Fast terminal music visualiser with ten styles and ScreenCaptureKit audio"
   homepage "https://github.com/IbrarYunus/spectra"
-  url "https://github.com/IbrarYunus/spectra/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "0755c3da9d8dbd2c3fd25dfe6729aae0ff17ffd6ae9c324e8d90b4df6bc41a50"
+  url "https://github.com/IbrarYunus/spectra/releases/download/v0.1.1/spectra-0.1.1-arm64-apple-darwin.tar.gz"
+  sha256 "02b2b79a7af0d22d3a442afc3c2e2de2beaa45d3d4cc7f61d73afe54c5875ea6"
+  version "0.1.1"
   license "MIT"
-  head "https://github.com/IbrarYunus/spectra.git", branch: "main"
 
-  depends_on "rust" => :build
   depends_on :macos
-  depends_on xcode: ["14.0", :build]
+  depends_on arch: :arm64
 
   def install
-    system "cargo", "build", "--release", "--locked"
-    bin.install "target/release/spectra"
-    lib.install "target/release/libspectra_sc.dylib"
+    bin.install "spectra"
+    lib.install "libspectra_sc.dylib"
   end
 
   test do
