@@ -2,6 +2,8 @@
 
 Homebrew tap for [spectra](https://github.com/IbrarYunus/spectra) — a fast terminal music visualiser for macOS by [Ibrar Yunus](https://ibraryunus.com).
 
+Case study and write-up: [ibraryunus.com/work/spectra/](https://ibraryunus.com/work/spectra/)
+
 ## Install
 
 ```sh
